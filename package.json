@@ -1,0 +1,25 @@
+{
+  "name": "zakrivayuschiy-teg-f",
+  "version": "1.0.0",
+  "description": "Проект \"Закрывающий тег\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "Test Ok!",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format && npm run lintfix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazannik/zakrivayuschiy-teg-f.git"
+  },
+  "author": "Mikhail Kazannik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kazannik/zakrivayuschiy-teg-f/issues"
+  },
+  "homepage": "https://github.com/Kazannik/zakrivayuschiy-teg-f#readme"
+}
