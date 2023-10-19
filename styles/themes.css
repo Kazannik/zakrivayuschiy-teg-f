@@ -82,22 +82,3 @@
   filter: invert(0.8) sepia(50%);
 }
 
-:root.theme-dark #filter1 {
-  filter: brightness(0.5) opacity(0.8) invert(0.8);
-}
-
-:root.theme-dark #filter3 {
-  filter: brightness(0.9);
-}
-
-:root.theme-dark #filter4 {
-  filter: hue-rotate(-330deg) invert(0.8);
-}
-
-:root.theme-dark #filter5 {
-  filter: brightness(50%) invert(0.8);
-}
-
-:root.theme-dark #filter7 {
-  filter: hue-rotate(40deg) brightness(1.5) contrast(0.6);
-}
