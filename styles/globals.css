@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
 }
@@ -32,9 +36,14 @@ a {
 
 button,
 input {
-  color: currentColor;
+  color: currentcolor;
   font-family: inherit;
   font-size: inherit;
+  border: none;
+}
+
+button:focus {
+  outline: none;
 }
 
 ul,

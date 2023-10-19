@@ -4,3 +4,100 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --card-text-font-weight: 400;
+    --card-title-font-weight: 700;
+    --background-color: #fff;
+    --accent-color: #000;
+    --stroke-color: #fff;
+    --button-text-color: #fff;
+    --heart-contour-color: #000;
+    --gradient: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --card-text-font-weight: 465;
+    --card-title-font-weight: 785;
+    --background-color: #000;
+    --accent-color: #00cc14;
+    --stroke-color: #000;
+    --button-text-color: #00cc14;
+    --heart-contour-color: #00cc14;
+    --gradient: repeating-linear-gradient(
+        to right,
+        #000 0 2px,
+        transparent 2px 4px
+      ),
+      repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+      linear-gradient(to bottom, #007f0c, #004306);
+  }
+}
+
+:root.theme-light {
+  --card-text-font-weight: 400;
+  --card-title-font-weight: 700;
+  --background-color: #fff;
+  --accent-color: #000;
+  --stroke-color: #fff;
+  --button-text-color: #fff;
+  --heart-contour-color: #000;
+  --gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+:root.theme-dark {
+  --card-text-font-weight: 465;
+  --card-title-font-weight: 785;
+  --background-color: #000;
+  --accent-color: #00cc14;
+  --stroke-color: #000;
+  --button-text-color: #00cc14;
+  --heart-contour-color: #00cc14;
+  --gradient: repeating-linear-gradient(
+      to right,
+      #000 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #007f0c, #004306);
+}
+
+:root.theme-dark #filter0 {
+  filter: invert(0.8) sepia(50%);
+}
+
+:root.theme-dark #filter1 {
+  filter: brightness(0.5) opacity(0.8) invert(0.8);
+}
+
+:root.theme-dark #filter3 {
+  filter: brightness(0.9);
+}
+
+:root.theme-dark #filter4 {
+  filter: hue-rotate(-330deg) invert(0.8);
+}
+
+:root.theme-dark #filter5 {
+  filter: brightness(50%) invert(0.8);
+}
+
+:root.theme-dark #filter7 {
+  filter: hue-rotate(40deg) brightness(1.5) contrast(0.6);
+}
