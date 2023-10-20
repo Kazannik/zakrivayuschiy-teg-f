@@ -30,6 +30,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--card-text-font-weight, 400);
+  max-inline-size:  700px;
 }
 
 .header {
