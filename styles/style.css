@@ -30,7 +30,6 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--card-text-font-weight, 400);
-  max-inline-size:  700px;
 }
 
 .header {
@@ -43,7 +42,11 @@
   font-weight: var(--card-text-font-weight, 400);
   background: var(--background-color, #fff);
   min-block-size: 364px;
-  inline-size: 100%;
+}
+
+.content_box {
+  max-inline-size: 700px;
+  inline-size: clamp(100vw, 100vw, 700px);
 }
 
 .header__logo {
@@ -70,6 +73,7 @@
   align-items: start;
   gap: 14px;
   margin-block-start: 25px;
+  margin-inline: auto;
   padding-inline-start: 18px;
 }
 
@@ -133,7 +137,6 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
-  inline-size: 100%;
 }
 
 .card {
@@ -276,7 +279,6 @@
 
 .footer {
   padding: 54px 34px;
-  inline-size: 100%;
 }
 
 .footer__button {
