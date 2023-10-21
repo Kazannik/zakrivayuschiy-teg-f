@@ -339,7 +339,7 @@
   display: block;
   color: var(--accent-color, #000);
   inline-size: 39px;
-  min-height: 39px;
+  block-size: 39px;
 }
 
 .modal__title {
@@ -353,6 +353,7 @@
 }
 
 .modal__button {
+  margin-block-start: 30px;
   inline-size: 100%;
   min-height: 38px;
 }
