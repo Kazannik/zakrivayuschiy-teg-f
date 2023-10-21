@@ -352,6 +352,10 @@
   max-inline-size: 198px;
 }
 
+.modal__button .button__text {
+  text-transform: uppercase;
+}
+
 .modal__button {
   margin-block-start: 30px;
   inline-size: 100%;
