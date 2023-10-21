@@ -256,7 +256,7 @@
   line-height: 90%;
   background: var(--background-color, #fff);
   cursor: pointer;
-  transition: translate 0.3s ease;
+  transition: translate 0.3s, box-shadow 0.3s ease;
   outline: none;
   z-index: 0;
 }
