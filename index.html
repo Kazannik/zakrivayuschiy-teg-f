@@ -22,7 +22,7 @@
   <body class="page">
     <header class="header content_box">
       <div class="header__logo">
-        <div class="header__title">&lt;/HTML&gt;</div>
+        <p class="header__title"><a href="#0" class="link">&lt;/HTML&gt;</a></p>
         <h1 class="header__subtitle">закрывающий тег</h1>
       </div>
 
@@ -61,12 +61,11 @@
               Фритрек и нулевой спринт: Подготовка к работе
             </h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;/HTML&gt;</p>
+              <span class="card__label">&lt;/HTML&gt;</span>
               <picture>
                 <source srcset="./images/image_01.webp" type="image/webp" />
                 <img
                   class="card__image"
-                  id="filter0"
                   src="./images/image_01.jpg"
                   alt="пишущая машинка"
                 />
@@ -127,12 +126,11 @@
           <article class="card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;/HTML&gt;</p>
+              <span class="card__label">&lt;/HTML&gt;</span>
               <picture>
                 <source srcset="./images/image_02.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter1"
+                  class="card__image card__image_filter_grayscale"
                   src="./images/image_02.jpg"
                   alt="мужчина с ноутбуком"
                 />
@@ -196,12 +194,11 @@
           <article class="card">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;css&gt;</p>
+              <span class="card__label">&lt;css&gt;</span>
               <picture>
                 <source srcset="./images/image_03.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter2"
+                  class="card__image card__image_filter_saturate"
                   src="./images/image_03.jpg"
                   alt="воздушные шары в небе"
                 />
@@ -265,12 +262,11 @@
           <article class="card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;desigions&gt;</p>
+              <span class="card__label">&lt;desigions&gt;</span>
               <picture>
                 <source srcset="./images/image_04.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter3"
+                  class="card__image card__image_filter_hue-rotate"
                   src="./images/image_04.jpg"
                   alt="построение схемы на доске при помощи ниток"
                 />
@@ -333,12 +329,11 @@
           <article class="card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">care</p>
+              <span class="card__label">care</span>
               <picture>
                 <source srcset="./images/image_05.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter4"
+                  class="card__image card__image_filter_invert"
                   src="./images/image_05.jpg"
                   alt="общий рабочий стол с ноутбуками"
                 />
@@ -404,12 +399,11 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;support&gt;</p>
+              <span class="card__label">&lt;support&gt;</span>
               <picture>
                 <source srcset="./images/image_06.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter5"
+                  class="card__image card__image_filter_sepia"
                   src="./images/image_06.jpg"
                   alt="шахматная доска и фигура"
                 />
@@ -470,12 +464,11 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;lifes-style: none;&gt;</p>
+              <span class="card__label">&lt;lifes-style: none;&gt;</span>
               <picture>
                 <source srcset="./images/image_07.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter6"
+                  class="card__image card__image_filter_blur"
                   src="./images/image_07.jpg"
                   alt="эскимо с клубникой и фисташками"
                 />
@@ -540,12 +533,11 @@
           <article class="card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="card__image-wrapper">
-              <p class="card__label">&lt;experience&gt;</p>
+              <span class="card__label">&lt;experience&gt;</span>
               <picture>
                 <source srcset="./images/image_08.webp" type="image/webp" />
                 <img
-                  class="card__image"
-                  id="filter7"
+                  class="card__image card__image_filter_hue-rotat_contrast"
                   src="./images/image_08.jpg"
                   alt="горное шоссе"
                 />
@@ -609,30 +601,34 @@
           </article>
         </li>
       </ul>
-    </main>
 
-    <footer class="footer content_box">
-      <button
-        type="button"
-        class="button footer__button"
-        onclick="window['save-it'].showModal()"
-        aria-controls="save-it"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" class="floppy">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">Сохранить на память</span>
-      </button>
-    </footer>
+      <div class="command-bar content_box">
+        <button
+          type="button"
+          class="button command-bar__button"
+          onclick="window['save-it'].showModal()"
+          aria-controls="save-it"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="floppy">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">Сохранить на память</span>
+        </button>
+      </div>
+    </main>
 
     <dialog id="save-it" class="modal">
       <div class="modal__header">
-        <svg xmlns="http://www.w3.org/2000/svg" class="modal__floppy">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="modal__floppy"
+          aria-hidden="true"
+        >
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <h2 class="modal__title">Вставьте дискету, чтобы продолжить</h2>
+        <p class="modal__title">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form>
+      <form method="dialog">
         <button type="submit" class="button modal__button">
           <span class="button__text">ок</span>
         </button>

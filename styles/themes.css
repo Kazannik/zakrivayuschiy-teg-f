@@ -77,36 +77,3 @@
     repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
 }
-
-:root.theme-dark #filter0 {
-  filter: sepia(50%);
-}
-
-:root.theme-dark #filter1 {
-  filter: hue-rotate(20deg) blur(20px);
-}
-
-:root.theme-dark #filter2 {
-  filter: invert(0.8) sepia(50%);
-}
-
-:root.theme-dark #filter3 {
-  filter: invert(0.8) sepia(50%) saturate(200%);
-}
-
-:root.theme-dark #filter4 {
-  filter: grayscale(80%);
-}
-
-:root.theme-dark #filter5 {
-  filter: hue-rotate(90deg) contrast(70%);
-}
-
-:root.theme-dark #filter6 {
-  filter: saturate(200%);
-}
-
-:root.theme-dark #filter7 {
-  filter: invert(0.8);
-}
-
