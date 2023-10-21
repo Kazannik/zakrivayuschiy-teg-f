@@ -259,7 +259,6 @@
   transition: translate 0.3s ease;
   outline: none;
   z-index: 0;
-  transition: box-shadow 0.3s ease;
 }
 
 .button:focus-visible {
