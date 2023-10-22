@@ -46,7 +46,7 @@
 
 .content_box {
   max-inline-size: 700px;
-  inline-size: clamp(100vw, 100vw, 700px);
+  inline-size: clamp(23.313rem, 16.116rem + 30.704vw, 43.75rem);
 }
 
 .header__logo {
@@ -58,8 +58,9 @@
 }
 
 .header__title {
-  font-size: clamp(3.0625rem, 2.7154rem + 1.4967vw, 4.0625rem);
+  font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .header__subtitle {
@@ -88,7 +89,6 @@
   text-transform: uppercase;
   background-color: var(--background-color);
   cursor: pointer;
-
   transition: opacity 0.3s ease;
 }
 
@@ -102,7 +102,6 @@
   background-color: var(--accent-color, #000);
   inline-size: 92%;
   scale: 0;
-
   transition: scale 0.3s ease;
 }
 
@@ -137,7 +136,7 @@
 .card-list {
   display: flex;
   flex-direction: column;
-  gap: 3.1em;
+  gap: 3.3em;
 }
 
 .card {
@@ -151,7 +150,6 @@
   border: solid var(--accent-color, #000);
   border-width: 2px 2px 0 2px;
   padding: 4px 10px 6px;
-  font-family: Arial, sans-serif;
   font-size: 18px;
   line-height: normal;
   font-variation-settings: 'wght' var(--card-title-font-weight, 700);
@@ -202,7 +200,7 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.5em;
   box-sizing: border-box;
   border: solid var(--accent-color, #000);
   border-width: 0 2px 2px 2px;
@@ -229,6 +227,9 @@
   background: transparent;
   transition: border-color 0.3s ease;
   cursor: pointer;
+  padding: 0;
+  width: 48px;
+  height: 38px;
 }
 
 .card__icon-button:focus-visible {
@@ -238,8 +239,7 @@
 
 .like-icon {
   position: relative;
-  top: 4px;
-  left: 2px;
+  top: 1px;
   fill: var(--accent-color, #000);
 }
 
@@ -396,12 +396,11 @@
     padding-block-end: 50px;
   }
 
-  .card {
-    width: 100vw;
+  .content_box {
+    inline-size: calc(100vw - 4px);
   }
 
   .header {
-    width: 100vw;
     padding: 120px 0 0;
     min-block-size: 327px;
   }
@@ -411,17 +410,17 @@
   }
 
   .card-list {
-    gap: 3.16em;
+    gap: 3.36em;
   }
 
   .card__content {
-    gap: 1.24em;
+    gap: 1.72em;
     padding-block-start: 26px;
     padding-block-end: 21px;
   }
 
   .like-icon {
-    top: 3px;
+    top: 0;
   }
 
   .card__label {
